@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FAU Covid-19 Info</string>
+    <string name="signupURL">https://lamp.cse.fau.edu/~dbenne11/whendiagram/add_user.php?</string>
 </resources>
