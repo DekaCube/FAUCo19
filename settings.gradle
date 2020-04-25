@@ -1,0 +1,2 @@
+rootProject.name='FAU Covid-19 Info'
+include ':app'
