@@ -5,6 +5,8 @@
     <string name="title_activity_tabbed">TabbedActivity</string>
     <string name="deathgraph">https://lamp.cse.fau.edu/~dbenne11/mobileapp/historical3.php</string>
     <string name="casegraph">https://lamp.cse.fau.edu/~dbenne11/mobileapp/historical2.php</string>
+    <string name="statedata">https://lamp.cse.fau.edu/~dbenne11/mobileapp/state.php</string>
+    <string name="countrydata">https://lamp.cse.fau.edu/~dbenne11/mobileapp/usa.php</string>
     <string name="tab_text_1">Florida</string>
     <string name="tab_text_2">United States</string>
     <string name="tab_text_3">US: Historical</string>

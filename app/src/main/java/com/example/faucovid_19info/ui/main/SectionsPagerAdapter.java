@@ -27,10 +27,17 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        if(position == 2){
-            return Historical.newInstance();
+        switch(position){
+            case 0:
+                return State.newInstance();
+            case 1:
+                return PlaceholderFragment.newInstance(position);
+            case 2:
+                return Historical.newInstance();
+            default:
+                return PlaceholderFragment.newInstance(10);
         }
-        return PlaceholderFragment.newInstance(position + 1);
+
     }
 
     @Nullable
