@@ -20,14 +20,14 @@ import com.example.faucovid_19info.R;
  * create an instance of this fragment.
  */
 public class Historical extends Fragment {
-    public WebView deaths;
-    public WebView cases;
+    private WebView deaths;
+    private WebView cases;
 
     public Historical() {
         // Required empty public constructor
     }
 
-    // TODO: Rename and change types and number of parameters
+
     public static Historical newInstance() {
         Historical fragment = new Historical();
         Bundle args = new Bundle();
