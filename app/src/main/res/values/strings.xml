@@ -2,4 +2,7 @@
     <string name="app_name">FAU Covid-19 Info</string>
     <string name="signupURL">https://lamp.cse.fau.edu/~dbenne11/whendiagram/add_user.php</string>
     <string name="loginURL">https://lamp.cse.fau.edu/~dbenne11/whendiagram/login.php</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>
