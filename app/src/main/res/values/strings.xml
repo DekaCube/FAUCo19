@@ -3,6 +3,12 @@
     <string name="signupURL">https://lamp.cse.fau.edu/~dbenne11/whendiagram/add_user.php</string>
     <string name="loginURL">https://lamp.cse.fau.edu/~dbenne11/whendiagram/login.php</string>
     <string name="title_activity_tabbed">TabbedActivity</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="deathgraph">https://lamp.cse.fau.edu/~dbenne11/mobileapp/historical3.php</string>
+    <string name="casegraph">https://lamp.cse.fau.edu/~dbenne11/mobileapp/historical2.php</string>
+    <string name="tab_text_1">Florida</string>
+    <string name="tab_text_2">United States</string>
+    <string name="tab_text_3">US: Historical</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
