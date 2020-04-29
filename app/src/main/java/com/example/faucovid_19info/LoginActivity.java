@@ -22,12 +22,18 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+/**
+ * The entrypoint for the application, this class provides control logic for the login_activity.xml
+ */
 public class LoginActivity extends AppCompatActivity {
     //View Components
     public TextView titleText;
     public TextView statusText;
     public EditText usernameText;
     public EditText passwordText;
+    /**
+     * This is where the volley request queue lives for this app, unusual but it works.
+     */
     public static RequestQueue rQueue;
 
     @Override
@@ -48,7 +54,12 @@ public class LoginActivity extends AppCompatActivity {
         rQueue = Volley.newRequestQueue(this);
     }
 
-    //If response successfully gets a JSON object back from the backend go here.
+    /**
+     * this function is called after the login request has successfully completed and been parsed into JSON
+     * and provides output to the user if failure, or starts the next activity if success
+     * @param response
+     * @throws JSONException
+     */
     public void handleLoginResponse(JSONObject response) throws JSONException {
         String loginStatus = response.getString("login");
         if(loginStatus.equals("success")){
@@ -74,6 +85,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     //If response sucessfully gets a JSON object back from signup request go here.
+
+    /**
+     * This method is called after a completed signup request, and outputs success/fail to the user
+     * @param response
+     * @throws JSONException
+     */
     public void handleSignupResponse(JSONObject response) throws JSONException {
         String signupStatus = response.getString("account_creation");
         System.out.println("DEBUG*** " + signupStatus);
@@ -87,6 +104,10 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Listener for the login button, makes the request to the login service
+     * @param v
+     */
     public void login(View v){
         String urlstart = getString(R.string.loginURL);
         String urlp2 = "?username=" + usernameText.getText().toString();
@@ -118,6 +139,10 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Listener for signup button, makes the signup request and oncomplete calls -> handleSignupResponse
+     * @param v
+     */
     public void signup(View v){
         String urlstart = getString(R.string.signupURL);
         String urlp2 = "?username=" + usernameText.getText().toString();

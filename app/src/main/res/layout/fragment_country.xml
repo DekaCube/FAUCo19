@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.Country">
+
+    <TextView
+        android:id="@+id/cname"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="COVID-19 Info for United States"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ctotalCases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Cases : 100000"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cnewCases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Today's Cases : 10283"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cdeaths"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Deaths : 10234"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cnewDeaths"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Today's Deaths : 102"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cactive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Active Cases : 10298"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/crecovered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recovered : 10232"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ccritical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Critical Condition : 10223"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ctotalTests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Tests : 1221"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ctpm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tests Per Million : 12"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ccpm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cases per Million : 123"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cdpm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text="Deaths per Million : 1"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <WebView
+        android:id="@+id/cflag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

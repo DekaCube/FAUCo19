@@ -1,7 +1,9 @@
 package com.example.faucovid_19info;
 
 
-//Data class for storing State Data
+/**
+ * Data class for holding State Data
+ */
 public class StateCovidData {
     private String state;
     private boolean isFetched;
@@ -12,6 +14,16 @@ public class StateCovidData {
     private double tests;
     private double testspermillion;
 
+    /**
+     *  Constructor-> must use , no setters for this class.
+     * @param state name of the state
+     * @param cases number of cases
+     * @param tcase number of new cases
+     * @param death number of deaths
+     * @param tdeath number of new deaths
+     * @param test number of tests
+     * @param tpm tests per million
+     */
     public StateCovidData(String state,double cases,double tcase,double death,double tdeath,double test,double tpm){
         this.isFetched = true;
         this.cases = cases;
@@ -22,7 +34,11 @@ public class StateCovidData {
         this.testspermillion = tpm;
         this.state = state;
     }
-    //Will prob just check that object reference ! null instead
+
+    /**
+     * Unused function, checked for null reference to object instead.
+     * @return bool representing if populated with data or not.
+     */
     public boolean isFetched(){
         return this.isFetched;
     }

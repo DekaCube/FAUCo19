@@ -25,17 +25,18 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         mContext = context;
     }
 
+    //This is what returns the fragment when the tabs are pressed.
     @Override
     public Fragment getItem(int position) {
         switch(position){
-            case 0:
+            case 0: //First Tab
                 return State.newInstance();
-            case 1:
-                return PlaceholderFragment.newInstance(position);
-            case 2:
+            case 1: //Second Tab
+                return Country.newInstance();
+            case 2: //And so on...
                 return Historical.newInstance();
-            default:
-                return PlaceholderFragment.newInstance(10);
+            default: //This should never happen
+                return State.newInstance();
         }
 
     }

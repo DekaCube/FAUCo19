@@ -22,7 +22,9 @@ import com.example.faucovid_19info.StateCovidData;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-
+/**
+ * Control logic for the state_fragment.xml functionality
+ */
 public class State extends Fragment {
     private static StateCovidData data;
     private TextView deaths;
@@ -60,6 +62,9 @@ public class State extends Fragment {
         return inflater.inflate(R.layout.fragment_state, container, false);
     }
 
+    /**
+     * populates the view elements with data from the CovidStateData static object
+     */
     public void buildView(){
         state.setText("COVID-19 Info for " + data.getState());
         deaths.setText("Deaths : " + Integer.toString((int)data.getDeaths()));
@@ -71,6 +76,11 @@ public class State extends Fragment {
 
     }
 
+    /**
+     * Main entry point for fragment logic
+     * @param view
+     * @param savedInstanceState
+     */
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);

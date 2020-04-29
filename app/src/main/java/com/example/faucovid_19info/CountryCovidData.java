@@ -1,5 +1,7 @@
 package com.example.faucovid_19info;
-
+/**
+* Data Class for Holding Country Data
+*/
 public class CountryCovidData {
     private String country;
     private double totalCases;
@@ -19,12 +21,18 @@ public class CountryCovidData {
         //Too many parameters for constructor
     }
     //Setters
+
+
     public void setCountry(String c){
         this.country = c;
     }
+
+
     public void setTotalCases(double t){
         this.totalCases = t;
     }
+
+
     public void setNewCases(double n){
         this.newCases = n;
     }

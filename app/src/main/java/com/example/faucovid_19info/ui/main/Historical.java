@@ -15,9 +15,7 @@ import android.webkit.WebView;
 import com.example.faucovid_19info.R;
 
 /**
- * A simple {@link Fragment} subclass.
- * Use the {@link Historical#newInstance} factory method to
- * create an instance of this fragment.
+ * Control logic for historical_fragment.xml
  */
 public class Historical extends Fragment {
     private WebView deaths;
@@ -50,6 +48,11 @@ public class Historical extends Fragment {
 
     }
 
+    /**
+     * main entry point for fragment
+     * @param view
+     * @param savedInstanceState
+     */
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);

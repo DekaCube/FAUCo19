@@ -18,6 +18,9 @@ import com.example.faucovid_19info.ui.main.SectionsPagerAdapter;
 
 import java.util.Objects;
 
+/**
+ * Boilerplate TabbedActivity, nothing changed from template.
+ */
 public class TabbedActivity extends AppCompatActivity {
 
 
@@ -31,7 +34,7 @@ public class TabbedActivity extends AppCompatActivity {
         //getSupportActionBar().setDisplayShowTitleEnabled(false);
         setContentView(R.layout.activity_tabbed);
 
-
+        //Not sure whats going on here, but looks like boilerplate scaffolding to get tabs to work.
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
         ViewPager viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(sectionsPagerAdapter);
