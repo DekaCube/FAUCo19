@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
     public TextView statusText;
     public EditText usernameText;
     public EditText passwordText;
+    public Button loginbutton;
     /**
      * This is where the volley request queue lives for this app, unusual but it works.
      */
@@ -49,6 +51,8 @@ public class LoginActivity extends AppCompatActivity {
         titleText = findViewById(R.id.titleText);
         usernameText = findViewById(R.id.usernameText);
         passwordText = findViewById(R.id.passwordText);
+
+
 
         //Instantiate the request queue.
         rQueue = Volley.newRequestQueue(this);
@@ -109,6 +113,9 @@ public class LoginActivity extends AppCompatActivity {
      * @param v
      */
     public void login(View v){
+
+        //System.out.println("DEBUG**" + v.getId());
+        //System.out.println(R.id.loginButton);
         String urlstart = getString(R.string.loginURL);
         String urlp2 = "?username=" + usernameText.getText().toString();
         String urlp3 = "&pw=" + passwordText.getText().toString();

@@ -16,7 +16,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.example.faucovid_19info.CountryCovidData;
+import com.example.faucovid_19info.data.CountryCovidData;
 import com.example.faucovid_19info.LoginActivity;
 import com.example.faucovid_19info.R;
 

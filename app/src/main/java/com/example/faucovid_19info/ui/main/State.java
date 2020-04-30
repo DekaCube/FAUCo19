@@ -17,7 +17,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.example.faucovid_19info.LoginActivity;
 import com.example.faucovid_19info.R;
-import com.example.faucovid_19info.StateCovidData;
+import com.example.faucovid_19info.data.StateCovidData;
 
 import org.json.JSONException;
 import org.json.JSONObject;

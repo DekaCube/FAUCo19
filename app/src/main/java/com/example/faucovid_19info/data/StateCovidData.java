@@ -1,4 +1,4 @@
-package com.example.faucovid_19info;
+package com.example.faucovid_19info.data;
 
 
 /**
